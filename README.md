@@ -1,0 +1,1 @@
+Simple Vue modal slideover component styled with [TailwindCSS](https://tailwindcss.com/).

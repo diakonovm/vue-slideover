@@ -1,0 +1,1 @@
+export { default as Slideover } from './slideover.vue';
