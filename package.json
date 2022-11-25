@@ -1,5 +1,17 @@
 {
-  "name": "vue-slideover",
+  "name": "@diakonovm/vue-slideover",
+  "description": "Simple Vue modal slideover component styled with TailwindCSS.",
+  "keywords": [
+    "slideover"
+  ],
+  "contributors": [
+    "Michael Diakonov <diakonov.m@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diakonovm/vue-slideover.git"
+  },
   "version": "0.0.1",
   "files": [
     "dist"
