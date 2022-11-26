@@ -1,5 +1,6 @@
 <script>
-const DEFAULT_TRANSITION = 'slideover'
+const DEFAULT_TRANSITION = 'vue-slideover'
+const DEFAULT_WIDTH = 'max-w-lg'
 
 export default {
   name: 'VueSlideover',
@@ -8,7 +9,7 @@ export default {
     scrollable: { type: Boolean, required: false, default: false },
     show: { type: Boolean, required: true, default: false },
     transition: { type: String, required: false, default: DEFAULT_TRANSITION },
-    width: {  type: String, required: false, default: 'max-w-lg' }
+    width: {  type: String, required: false, default: DEFAULT_WIDTH }
   },
   methods: {
     freeze() {
