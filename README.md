@@ -17,12 +17,27 @@ export default {
     return {
       show: false
     }
+  },
+  methods: {
+    toggle() {
+      this.show = !this.show
+    }
   }
 }
 </script>
 
 <template>
   <div>
+    <div class="fixed top-0 left-0 right-0 bg-white">
+      <button 
+        class="flex items-center py-4 px-4"
+        @click="toggle"
+      >
+        <span class="block text-2xl">🚪</span>
+        <span class="block text-sm">open</span>
+      </button>
+    </div>
+
     <Slideover 
       :scrollable="false"
       :show="show"
@@ -49,12 +64,16 @@ export default {
 </template>
 ```
 
+### Props
+
 | Prop | Default | Description |
 | ---- | ------- | ----------- |
 | scrollable | `false` | Disable background scroll |
 | show | `false` | View state of modal |
 | transition | `vue-slideover` | Specify transition animation class |
 | width | `max-w-lg` | Apply any TailwindCSS `max-w-*` class |
+
+### Events
 
 | Event | Description |
 | ---- | ----------- |
