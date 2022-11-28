@@ -1,36 +1,33 @@
 <script>
-import Slideover from './components/slideover.vue'
+import Slideover from "./components/slideover.vue";
 
 export default {
   components: {
-    Slideover
+    Slideover,
   },
   data() {
     return {
-      show: false
-    }
+      show: false,
+    };
   },
   methods: {
     toggle() {
-      this.show = !this.show
-    }
-  }
-}
+      this.show = !this.show;
+    },
+  },
+};
 </script>
 
 <template>
   <div>
     <div class="fixed top-0 left-0 right-0 bg-white">
-      <button 
-        class="flex items-center py-4 px-4"
-        @click="toggle"
-      >
+      <button class="flex items-center py-4 px-4" @click="toggle">
         <span class="block text-2xl">🚪</span>
         <span class="block text-sm">open</span>
       </button>
     </div>
-    
-    <Slideover 
+
+    <Slideover
       :scrollable="false"
       :show="show"
       :width="`max-w-lg`"
@@ -39,7 +36,7 @@ export default {
       v-slot="{ hide }"
     >
       <div class="flex-shrink-0 flex items-center justify-end bg-white">
-        <button 
+        <button
           @click="hide"
           class="flex items-center space-x-1.5 text-2xl py-4 px-4"
         >
@@ -55,8 +52,7 @@ export default {
         <div class="w-full h-[250px] bg-black"></div>
         <div class="w-full h-[250px] bg-white"></div>
       </div>
-      <div class="flex-shrink-0 h-20 bg-white">
-      </div>
+      <div class="flex-shrink-0 h-20 bg-white"></div>
     </Slideover>
 
     <div class="w-full h-[500px] bg-black"></div>

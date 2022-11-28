@@ -1,4 +1,4 @@
-import Slideover from './slideover.vue'
-import '../style.css'
+import Slideover from "./slideover.vue";
+import "../style.css";
 
-export default Slideover
+export default Slideover;
